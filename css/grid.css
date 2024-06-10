@@ -1,0 +1,15 @@
+.grid {
+    display: grid;
+}
+
+.has-4-columns {
+    grid-template-columns: repeat(4, )
+}
+
+.has-10-columns {
+    grid-template-columns: repeat(10, )
+}
+
+.has-20-columns {
+    grid-template-columns: repeat(20, )
+}

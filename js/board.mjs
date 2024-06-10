@@ -1,3 +1,5 @@
+import { showGrid } from "./gridHelper.mjs"
+
 const gameover = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -85,17 +87,7 @@ const startBoard = [
 ]
 
 const showStartScreen = (rootElem) => {
-    for (let i = 0; i < startBoard.length; i++) {
-        for (let j = 0; j < startBoard[i].length; j++) {
-            const cell = document.createElement('div')
-            if (startBoard[i][j] === 0) {
-                cell.setAttribute('class', 'cell empty')
-            } else {
-                cell.setAttribute('class', 'cell redCell')
-            }
-            rootElem.append(cell)
-        }
-    }
+    showGrid(rootElem, startBoard)
 }
 
 const board = { gameover, startBoard, showStartScreen }
