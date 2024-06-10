@@ -1,22 +1,17 @@
-import { getRand} from './tetrominos.mjs'
+import { getRand } from './tetrominos.mjs'
 import { board } from './board.mjs'
-const rtet= getRand()
+import { preView } from './preview.mjs'
+
+
 const boardDiv = document.getElementById('board')
 board.showStartScreen(boardDiv)
-const = preViewDiv = document.getElement
 
-for(let i = 0; i < 5; i++) {
-const tet = rtet[i % rtet.length]
-for ( let j = 0; j < tet.length; j++) {
-    console.log(tet[j])
+const rtet = getRand()
+const preViewDiv = document.getElementById('preview')
+preView.showPreview(preViewDiv, rtet)
 
-}
-
-}
-
-const name = 'WPGROCKS'
+const name = 'WPGRocks'
 
 export {
     name
 }
-

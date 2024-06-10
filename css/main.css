@@ -1,14 +1,15 @@
 @import url('cell.css');
 
 body {
-    background-color: darkslategrey;
+    background-color: lightgrey;
 }
 
 div#board {
     display: grid;
-    grid-template-columns: repeat(10, 1fr)
+    grid-template-columns: repeat(20, 1fr);
 }
-    div#preview {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
+
+div#preview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
