@@ -4,7 +4,7 @@ import { preView } from './preview.mjs'
 
 
 const boardDiv = document.getElementById('board')
-board.showStartScreen(boardDiv)
+board.createEmptyBoard(boardDiv)
 
 const rtet = getRand()
 const preViewDiv = document.getElementById('preview')
