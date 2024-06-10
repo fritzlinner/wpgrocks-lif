@@ -19,6 +19,10 @@ const showGrid = (rootElem, matrix) => {
     }
 }
 
+const showEmptyGrid = (rootElem, w, h) => {
+    
+}
+
 export {
     showGrid
 }

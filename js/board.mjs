@@ -87,9 +87,13 @@ const startBoard = [
 ]
 
 const showStartScreen = (rootElem) => {
-    showGrid(rootElem, startBoard)
+    showGrid(rootElem, 10, 20)
 }
 
-const board = { gameover, startBoard, showStartScreen }
-
+const board = { 
+    gameover,
+    startBoard,
+    showstartScreen,
+    createEmptyBoard
+}
 export { board }
