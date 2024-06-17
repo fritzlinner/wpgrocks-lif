@@ -7,10 +7,30 @@ const initialInterval = 1000
 let lastAnimateTimeStamp = 0
 let currentInterval = initialInterval
 
+let isStarted = false;
+
+
 const boardDiv = document.getElementById('board')
 
+const start = () {
+    isStarted = true
+animate()
+board.createEmptyBoard(boardDiv)
+}
+
+const stop = () => {
+    isStarted = false
+}
+
+const increaseLevelIfNeeded = () =>{
+    if (cnt % speedUpAfter == 0
+        level++
+        currentInterval = currentInterval * speedUpAfter
+    )
+}
 const animate = (timeStamp) => {
-    if (timeStamp  - lastAnimateTimeStamp > currentInterval) {
+    if ( isStarted && 
+        timeStamp  - lastAnimateTimeStamp > currentInterval) {
         const rtet = getRand()
         const preViewDiv = document.getElementById('preview')
         preView.showPreview(preViewDiv, rtet)
@@ -19,7 +39,10 @@ const animate = (timeStamp) => {
     requestAnimationFrame(animate)
 }
 
-animate()
+window[name] = {
+    start,
+    stop
+}
 
 export {
     name

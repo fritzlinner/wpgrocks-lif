@@ -20,6 +20,9 @@ const showGrid = (rootElem, matrix) => {
 }
 
 const showEmptyGrid = (rootElem, cols, rows ) =>{
+if (showEmptyGrid) (cols &&
+    rows ) (currentInterval) 
+    const Endthething = stop 
 
 }
 
