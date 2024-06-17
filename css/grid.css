@@ -3,13 +3,13 @@
 }
 
 .has-4-columns {
-    grid-template-columns: repeat(4, )
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .has-10-columns {
-    grid-template-columns: repeat(10, )
+    grid-template-columns: repeat(10, 1fr);
 }
 
 .has-20-columns {
-    grid-template-columns: repeat(20, )
+    grid-template-columns: repeat(20, 1fr);
 }

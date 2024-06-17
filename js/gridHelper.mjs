@@ -3,9 +3,9 @@ const cssClassNameForColumnCount = {
     10: 'has-10-columns',
     20: 'has-20-columns'
 }
-
 const showGrid = (rootElem, matrix) => {
-    rootElem.setAttribute('class', 'grid' + cssClassNameForColumnCount [matrix[0].length])
+    rootElem.innerHTML = ''
+    rootElem.setAttribute('class', 'grid ' + cssClassNameForColumnCount[matrix[0].length])
     for (let i = 0; i < matrix.length; i++) {
         for (let j = 0; j < matrix[0].length; j++) {
             const cell = document.createElement('div')
@@ -19,10 +19,10 @@ const showGrid = (rootElem, matrix) => {
     }
 }
 
-const showEmptyGrid = (rootElem, w, h) => {
-    
+const showEmptyGrid = (rootElem, cols, rows ) =>{
+
 }
 
 export {
-    showGrid
+    showGrid, showEmptyGrid
 }

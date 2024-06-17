@@ -1,6 +1,7 @@
 .cell {
-    padding: 1em;
     aspect-ratio: 1;
+    color: aliceblue;
+    font-size: 0.6em;
 }
 
 .empty {
