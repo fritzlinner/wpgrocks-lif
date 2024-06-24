@@ -5,9 +5,36 @@
 }
 
 .empty {
-    background-color: black;
+    background: url(https://skyltmax-shrine.s3-accelerate.amazonaws.com/production/extraimage/file/png-faecbd8c9f142caf071be7f9057c4c78.png);
 }
 
 .redCell {
+    background-color: rgb(145, 12, 12);
+}
+
+.s {
+    background-color: black(96, 107, 119);
+}
+
+.t {
+    background-color: yellow;
+}
+
+.o {
+    background-color: aqua;
+}
+.i {
+    background-color: blue;
+}
+
+.z {
+    background-color: green
+}
+
+.j {
     background-color: red;
+}
+
+.l {
+    background-color: blueviolet;
 }

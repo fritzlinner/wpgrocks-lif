@@ -1,7 +1,7 @@
 import { showGrid } from "./gridHelper.mjs"
 
 const showPreview = (rootElem, tetromino) => {
-    const tet = tetromino[0]
+    const tet = tetromino.grids[0]
     showGrid(rootElem, tet)
 }
 

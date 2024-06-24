@@ -9,6 +9,7 @@ const showGrid = (rootElem, matrix) => {
     for (let i = 0; i < matrix.length; i++) {
         for (let j = 0; j < matrix[0].length; j++) {
             const cell = document.createElement('div')
+            // cell.innerHTML = i * matrix[0].length + j
             if (matrix[i][j] === 0) {
                 cell.setAttribute('class', 'cell empty')
             } else {
@@ -19,11 +20,9 @@ const showGrid = (rootElem, matrix) => {
     }
 }
 
-const showEmptyGrid = (rootElem, cols, rows ) =>{
-if (showEmptyGrid) (cols &&
-    rows ) (currentInterval) 
-    const Endthething = stop 
 
+const showEmptyGrid = (rootElem, cols, rows) => {
+    showGrid(rootElem, new Array(rows).fill(new Array(cols).fill(0)))
 }
 
 export {
